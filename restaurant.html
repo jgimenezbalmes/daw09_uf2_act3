@@ -6,6 +6,13 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss\restaursass.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -97,6 +104,19 @@
                 <div><img src="img\img_salad.jpg" alt="Amanida"></div>
                 <div><img src="img\img_salad.jpg" class="fosc" alt="Amanida"></div>
             </div>
+            <h2>Video propi</h2>
+            <div class="video-div">
+                <video id="videopag"autoplay muted>
+                    <source src="video\video_practica_oriol.mp4" type="video/mp4" alt="video conspiranoic d'en roger">
+                  Your browser does not support the video tag.
+                </video> 
+                <div class="barrabotons">
+                    <div id="play" class="material-symbols-outlined status" onclick="play()">play_arrow</div>
+                    <div id="mute" class="material-symbols-outlined status" onclick="mute()">volume_off</div>
+                </div>
+            </div>
+            <h2>Video de youtube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZFh5vrE_vZo" alt="com pintar warhammer" frameborder="0" allowfullscreen></iframe>
         </div>
     </container>
     <footer>
@@ -109,5 +129,5 @@
         <p>Restaurant Els Coberts</p>
     </footer>
 </body>
-
+<script src="scripts.js"></script>
 </html>

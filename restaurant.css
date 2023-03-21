@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
 }
 
 /*Color de menú principal, amb posició sticky i z-index elevat per a que ens segueixi quan fem scroll */
@@ -312,6 +314,33 @@ footer>p {
     margin-right: 2%;
 }
 
+video {
+    display: block;
+    height: auto;
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+
+.video-wrap {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+  }
+
+.video-wrap:after {
+    border-bottom: 1px solid red;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
 /*SEGONA PART DE LA PRÀCTICA*/
 
 @media only screen and (max-width: 768px){
@@ -393,4 +422,6 @@ footer>p {
     .flex-container>div {
         width: 96%;
     }
+
+    
 }

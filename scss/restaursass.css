@@ -195,6 +195,30 @@ header {
       #contenidor .flex-container divhover {
         border: 3px solid gray; }
 
+        .video-div{
+          position:relative;
+      }
+
+      video{
+        width:100%;
+      }
+      
+      .barrabotons{
+          position:absolute;
+          justify-content: flex-end;
+          display:flex;
+          top:0px;
+          background-color: black;
+          width: 100%;
+          opacity: 70%;
+          
+      }
+
+      .barrabotons > div {
+        margin-right: 10px;
+        color: white;
+      }
+
 /*Ens serveix per a que els elements saltin de linia quan l'amplada del navegador sigui menor a 780px*/
 @media (max-width: 780px) {
   .flex-container > div {
